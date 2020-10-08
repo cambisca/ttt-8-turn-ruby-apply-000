@@ -8,7 +8,16 @@
  # ask for input again until you get a valid input
 #end
 
-
+def turn(board)
+  puts "Please enter 1-9:"
+  user_input = gets.strip
+  index = input_to_index(user_input)
+    if valid_move?(board, index)
+      move(board, index, value = "X")
+        turn(board)
+    end
+  display_board(board)
+end
 
 def move(array, index, value = "X")
   array[index] = value
