@@ -19,6 +19,9 @@ def turn(board)
    display_board(board)
 end
 
+def current_player(board)
+
+end
 
 def input_to_index(index)
   index = index.to_i - 1
