@@ -8,6 +8,8 @@
  # ask for input again until you get a valid input
 #end
 
+
+
 def move(array, index, value = "X")
   array[index] = value
 end
